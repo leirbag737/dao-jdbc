@@ -28,5 +28,10 @@ public class Program2 {
 
         System.out.println("Test 4: department delete");
         departmentDao.deleteById(7);
+
+        System.out.println("Test 5: department update");
+        department = departmentDao.findById(2);
+        department.setName("Update test");
+        departmentDao.update(department);
     }
 }
