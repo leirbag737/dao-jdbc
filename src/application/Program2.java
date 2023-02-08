@@ -25,5 +25,8 @@ public class Program2 {
         for(Department obj : list){
             System.out.println(obj);
         }
+
+        System.out.println("Test 4: department delete");
+        departmentDao.deleteById(7);
     }
 }
